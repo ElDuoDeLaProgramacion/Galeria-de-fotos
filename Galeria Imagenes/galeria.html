@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Interfaz Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        h2{
+          text-align: center;
+          color: rgba(0, 4, 253, 0.404);
+        }
+        h3{
+            color: rgb(0, 0, 0);
+            font-style: italic;
+            
+        }
+         .Imagene {
+            color: rgb(38, 0, 255);
+            font-style: italic;
+            font-size: 30px;
+         }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+           
+        }
+        header {
+            background-color: #61ffd0;
+            color: rgb(0, 0, 0);
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            padding-top: 2rem;
+
+            max-width: 80%;
+            
+             
+            box-sizing: border-box;
+                  
+        }
+        .image-gallery {
+            padding-left: 0rem;
+            justify-content:space-evenly;
+            display: flex;
+           
+        }
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: solid black;
+            
+        }
+        footer {
+            background-color: #61ffd0;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 1rem;
+            
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mis mejores momentos en viajes</h1>
+       
+       
+    </header>
+    <div class="container">
+      <h2>Carousel de Imagenes</h2>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../Galeria Imagenes/Imagenes/Pesca.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="">Mi primer pescado</h3>
+              <p class="Imagene">En este viaje fue donde hice mi primera pesca junto con mi familia</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../Galeria Imagenes/Imagenes/Primera vez en el castillo.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="">Visita al Castillo de Cartagena</h3>
+              <p class="Imagene">Un paseo al castillo de Cartagena mientras visitabamos Cartagena</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../Galeria Imagenes/Imagenes/Cartagena.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="">Mi primera vez en Cartagena</h3>
+              <p class="Imagene">La primera vez que fui a una playa, siendo Cartagena</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+      
+        <section>
+            <h2>Galería de Imágenes</h2>
+            <div class="image-gallery">
+              <div class="card" style="width: 35rem;">
+                <img src="../Galeria Imagenes/Imagenes/Parque.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Parque Simón Bolivar</h5>
+                  <p class="card-text">Un parque bastante extenso, tenia mucho que visitar, y lo que me parecio genial fue que cuando lo visitamos justo estaban en compentencias deportivas, lo que me emociono más.</p>
+                  
+                </div>
+              </div>
+              <div class="card" style="width: 25rem;">
+                <img src="../Galeria Imagenes/Imagenes/Playa.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Playa Santa Marta</h5>
+                  <p class="card-text">De todos los viajes a diferentes playas, creo que este fue el que mas me dejo marcado, ya que hicimos muchas cosas y una de esas fue visitar otra isla donde me tome esta foto.</p>
+                 
+                </div>
+              </div>
+              <div class="card" style="width: 25rem;">
+                <img src="../Galeria Imagenes/Imagenes/Lago.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Laguna de Tota</h5>
+                  <p class="card-text">Durante el viaje visitando los pueblos de boyaca, nos encontramos con este sitio turistico donde manejamos unas cuatrimotos para llegar a unos hermosos largos.</p>
+                  
+                </div>
+              </div>
+            </div>
+        </section>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Code HTML
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                <p>
+                  <img src="../Galeria Imagenes/Imagenes/Diseño sin título (1).png" alt="" style="align-content: center; padding-left: 100px;">
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    <footer>
+        <p>&copy; Muchas gracias , estoy aprendiendo el mundo del desarrollo web.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
